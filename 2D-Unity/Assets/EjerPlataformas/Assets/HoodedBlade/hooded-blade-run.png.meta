@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 247d0eb667ba99147a459ca8c175efa3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6466261074840382479
+    second: hooded-blade-run_0
+  - first:
+      213: 2501860809706348973
+    second: hooded-blade-run_1
+  - first:
+      213: 4286683175730639391
+    second: hooded-blade-run_2
+  - first:
+      213: -4746590759059111350
+    second: hooded-blade-run_3
+  - first:
+      213: -8725522943576155590
+    second: hooded-blade-run_4
+  - first:
+      213: 5291554987196472802
+    second: hooded-blade-run_5
+  - first:
+      213: 8119271972654349323
+    second: hooded-blade-run_6
+  - first:
+      213: 4075776024719937437
+    second: hooded-blade-run_7
+  - first:
+      213: 3720319919451072261
+    second: hooded-blade-run_8
+  - first:
+      213: -899777817228811371
+    second: hooded-blade-run_9
+  - first:
+      213: 1151245531306964383
+    second: hooded-blade-run_10
+  - first:
+      213: -158185531921761724
+    second: hooded-blade-run_11
+  - first:
+      213: 1988298034769406516
+    second: hooded-blade-run_12
+  - first:
+      213: 9184747079021639258
+    second: hooded-blade-run_13
+  - first:
+      213: -7783616024731815946
+    second: hooded-blade-run_14
+  - first:
+      213: 7083870117125058669
+    second: hooded-blade-run_15
+  - first:
+      213: 9114573431368742285
+    second: hooded-blade-run_16
+  - first:
+      213: -6988726665929042987
+    second: hooded-blade-run_17
+  - first:
+      213: 1368551412594670152
+    second: hooded-blade-run_18
+  - first:
+      213: -7422482835190765206
+    second: hooded-blade-run_19
+  - first:
+      213: -5415838268243854529
+    second: hooded-blade-run_20
+  - first:
+      213: 2848690480507371350
+    second: hooded-blade-run_21
+  - first:
+      213: 5448198216997877249
+    second: hooded-blade-run_22
+  - first:
+      213: -1738601173593262046
+    second: hooded-blade-run_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hooded-blade-run_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2111
+        width: 277
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f31439efc93346a0800000000000000
+      internalID: -6466261074840382479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_1
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 2113
+        width: 227
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1a408a62568b220800000000000000
+      internalID: 2501860809706348973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_2
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 2115
+        width: 396
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f127112f2ab5d7b30800000000000000
+      internalID: 4286683175730639391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_3
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 2142
+        width: 415
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4241286ad8b02eb0800000000000000
+      internalID: -4746590759059111350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_4
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 2115
+        width: 411
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a5f94dc17b8e680800000000000000
+      internalID: -8725522943576155590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1603
+        width: 260
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2edda4999316f6940800000000000000
+      internalID: 5291554987196472802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_6
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1604
+        width: 286
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cf8d467d27da070800000000000000
+      internalID: 8119271972654349323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_7
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1613
+        width: 294
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f4c7933b0109830800000000000000
+      internalID: 4075776024719937437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_8
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1600
+        width: 248
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507e0b1714b31a330800000000000000
+      internalID: 3720319919451072261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_9
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1602
+        width: 240
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593ec4ba7d85383f0800000000000000
+      internalID: -899777817228811371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_10
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1090
+        width: 395
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95bece06bb0aff00800000000000000
+      internalID: 1151245531306964383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_11
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1115
+        width: 414
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a7239c8130ecdf0800000000000000
+      internalID: -158185531921761724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_12
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1090
+        width: 405
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43aa906378ad79b10800000000000000
+      internalID: 1988298034769406516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_13
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1091
+        width: 255
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5634e43ec6c67f70800000000000000
+      internalID: 9184747079021639258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_14
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1093
+        width: 286
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff62d1077a0bf390800000000000000
+      internalID: -7783616024731815946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 577
+        width: 290
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d607e3ee656fe4260800000000000000
+      internalID: 7083870117125058669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_16
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 575
+        width: 243
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8572f7ae387d7e70800000000000000
+      internalID: 9114573431368742285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_17
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 577
+        width: 284
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3dffc002e030f90800000000000000
+      internalID: -6988726665929042987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_18
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 599
+        width: 407
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a709442421ef210800000000000000
+      internalID: 1368551412594670152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_19
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 590
+        width: 417
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a692509ff2b0ef890800000000000000
+      internalID: -7422482835190765206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_20
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 66
+        width: 404
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3bbb541ac317d4b0800000000000000
+      internalID: -5415838268243854529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_21
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 69
+        width: 259
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fbda526e4988720800000000000000
+      internalID: 2848690480507371350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_22
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 71
+        width: 293
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106331e9963eb9b40800000000000000
+      internalID: 5448198216997877249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-run_23
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 73
+        width: 290
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22875e1b17f3fd7e0800000000000000
+      internalID: -1738601173593262046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hooded-blade-run_0: -6466261074840382479
+      hooded-blade-run_1: 2501860809706348973
+      hooded-blade-run_10: 1151245531306964383
+      hooded-blade-run_11: -158185531921761724
+      hooded-blade-run_12: 1988298034769406516
+      hooded-blade-run_13: 9184747079021639258
+      hooded-blade-run_14: -7783616024731815946
+      hooded-blade-run_15: 7083870117125058669
+      hooded-blade-run_16: 9114573431368742285
+      hooded-blade-run_17: -6988726665929042987
+      hooded-blade-run_18: 1368551412594670152
+      hooded-blade-run_19: -7422482835190765206
+      hooded-blade-run_2: 4286683175730639391
+      hooded-blade-run_20: -5415838268243854529
+      hooded-blade-run_21: 2848690480507371350
+      hooded-blade-run_22: 5448198216997877249
+      hooded-blade-run_23: -1738601173593262046
+      hooded-blade-run_3: -4746590759059111350
+      hooded-blade-run_4: -8725522943576155590
+      hooded-blade-run_5: 5291554987196472802
+      hooded-blade-run_6: 8119271972654349323
+      hooded-blade-run_7: 4075776024719937437
+      hooded-blade-run_8: 3720319919451072261
+      hooded-blade-run_9: -899777817228811371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
