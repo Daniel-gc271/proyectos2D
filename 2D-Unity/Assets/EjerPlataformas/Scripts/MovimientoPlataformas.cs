@@ -26,6 +26,10 @@ public class MovimientoPlataformas : MonoBehaviour
     [Header("Estado actual")]
     [SerializeField] private bool isGrounded;
     [SerializeField] private bool isRunning;
+    [Header("Ataque con Espada")]
+    [SerializeField] private Transform attackPoint; // Punto desde donde ataca la espada
+    [SerializeField] private float attackRange = 0.5f; // Radio del ataque
+    [SerializeField] private LayerMask enemyLayers; // Layer de los enemigos
     private bool canEnterDoor;
     private float movH;
     private float movV;
@@ -126,8 +130,42 @@ public class MovimientoPlataformas : MonoBehaviour
                 }
             }
         }
+        // Ataque con Espada (Tecla E o Clic Izquierdo)
+        if (Input.GetKeyDown(KeyCode.E) || (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame))
+        {
+            AtacarEspada();
+        }
+    }
+    private void AtacarEspada()
+    {
+        // Disparar animación de ataque si existe
+        if (animator != null)
+        {
+            animator.SetTrigger("Attack"); // Asegúrate de tener este Trigger en tu Animator si usas animación
+        }
+
+        // Detectar enemigos en el rango de ataque
+        Vector3 puntoAtaque = attackPoint != null ? attackPoint.position : transform.position;
+        Collider2D[] enemigosGolpeados = Physics2D.OverlapCircleAll(puntoAtaque, attackRange, enemyLayers);
+
+        // Infligir daño / Matar enemigos detectados
+        foreach (Collider2D enemigo in enemigosGolpeados)
+        {
+            Enemigo scriptEnemigo = enemigo.GetComponent<Enemigo>();
+            if (scriptEnemigo != null)
+            {
+                scriptEnemigo.Morir();
+            }
+        }
     }
 
+    // Dibuja el rango del ataque en el editor de Unity para facilitar el ajuste
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null) return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
     private void EntrarPuerta()
     {
         Debug.Log("¡Entrando por la puerta!");
