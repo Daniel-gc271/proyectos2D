@@ -8,6 +8,7 @@ TagManager:
   - Rojo
   - ladder
   - door
+  - Flecha
   layers:
   - Default
   - TransparentFX

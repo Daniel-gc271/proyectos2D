@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections; // Necesario para la corrutina del parpadeo
 
 public class PlayerControllerEsquivaflechas : MonoBehaviour
 {
@@ -11,8 +12,14 @@ public class PlayerControllerEsquivaflechas : MonoBehaviour
     [Header("Detección de Suelo")]
     [SerializeField] private LayerMask capaSuelo; // Selecciona aquí la capa de tu suelo
 
+    [Header("Efecto de Daño (Shader GPU)")]
+    [SerializeField] private Color colorDaño = Color.red;
+    [SerializeField] private float duracionParpadeo = 0.15f;
+    [SerializeField] private int cantidadParpadeos = 3;
+
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
+    private SpriteRenderer spriteRenderer; // Componente que envía el color al shader de la GPU
     private float movimientoHorizontal;
     private bool mirandoDerecha = true;
     private bool enElSuelo;
@@ -21,6 +28,7 @@ public class PlayerControllerEsquivaflechas : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Inicializamos el SpriteRenderer
     }
 
     void Update()
@@ -34,16 +42,24 @@ public class PlayerControllerEsquivaflechas : MonoBehaviour
             mainPlayerAnimator.SetBool("OnGround", enElSuelo);
         }
 
-        // 2. Capturar el movimiento horizontal
-        movimientoHorizontal = Input.GetAxisRaw("Horizontal");
+        // 2. Capturar el movimiento horizontal con A y D (A = -1, D = 1)
+        movimientoHorizontal = 0f;
+        if (Input.GetKey(KeyCode.A))
+        {
+            movimientoHorizontal = -1f;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            movimientoHorizontal = 1f;
+        }
 
         if (mainPlayerAnimator != null)
         {
             mainPlayerAnimator.SetFloat("Speed", Mathf.Abs(movimientoHorizontal));
         }
 
-        // 3. Detectar el salto (solo si está tocando el suelo)
-        if (Input.GetButtonDown("Jump") && enElSuelo)
+        // 3. Detectar el salto con la tecla Espacio (solo si está tocando el suelo)
+        if (Input.GetKeyDown(KeyCode.Space) && enElSuelo)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
 
@@ -53,7 +69,13 @@ public class PlayerControllerEsquivaflechas : MonoBehaviour
             }
         }
 
-        // 4. Girar el renderizado del personaje
+        // 4. Detectar el ataque con el Clic Izquierdo del ratón
+        if (Input.GetMouseButtonDown(0))
+        {
+            Atacar();
+        }
+
+        // 5. Girar el renderizado del personaje
         GirarPersonaje(movimientoHorizontal);
     }
 
@@ -86,6 +108,47 @@ public class PlayerControllerEsquivaflechas : MonoBehaviour
             Vector3 escala = transform.localScale;
             escala.x *= -1;
             transform.localScale = escala;
+        }
+    }
+
+    private void Atacar()
+    {
+        if (mainPlayerAnimator != null)
+        {
+            mainPlayerAnimator.SetTrigger("Attack");
+        }
+    }
+
+    // DETECCIÓN DE IMPACTO BASADA EN COMPONENTE
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Si el objeto con el que chocamos tiene el componente de la flecha
+        if (collision.GetComponent<DestructorFlecha>() != null)
+        {
+            // Le quitamos una vida al jugador
+            if (GameControllerEsquivaflechas.Instancia != null)
+            {
+                GameControllerEsquivaflechas.Instancia.RestarVida();
+            }
+
+            // Iniciamos el parpadeo de color directo en la gráfica
+            StartCoroutine(EfectoParpadeoShader());
+
+            // Borramos la flecha de inmediato para que no vuelva a golpearnos en el mismo fotograma
+            Destroy(collision.gameObject);
+        }
+    }
+
+    // CORRUTINA: Cambia los parámetros del material en la GPU
+    private IEnumerator EfectoParpadeoShader()
+    {
+        for (int i = 0; i < cantidadParpadeos; i++)
+        {
+            spriteRenderer.color = colorDaño; // Aplica el tinte rojo en el shader
+            yield return new WaitForSeconds(duracionParpadeo);
+
+            spriteRenderer.color = Color.white; // Restaura el estado original sin tinte
+            yield return new WaitForSeconds(duracionParpadeo);
         }
     }
 }
