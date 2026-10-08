@@ -27,19 +27,19 @@ public class JugadorPulsacionRaton : MonoBehaviour
             Vector2 mousePosition = Input.mousePosition;
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-            if (circleCollider ==Physics2D.OverlapPoint(worldPosition))
+            if (circleCollider !=Physics2D.OverlapPoint(worldPosition))
             {
 
                 Debug.Log("No me golpeaste las bolas"); 
             }
             else
             {
-                
+                audioSource.PlayOneShot(audioClip, 0.1f);
                 Debug.Log("me golpeaste las bolas");
-                Destroy(this.gameObject);
+                Destroy(this.gameObject, 2f);
                 controlador.incrementarPuntuacion();
             }
-            audioSource.PlayOneShot(audioClip, 0.1f);
+            
 
         }
     }

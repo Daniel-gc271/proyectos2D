@@ -1,100 +1,103 @@
 fileFormatVersion: 2
-guid: 1a452800281b47a41afb18104d3f3a6f
+guid: 9f913cb8115da054186d22c5aafc728e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6128299156075563123
-    second: sprites_0
+      213: 1811882636426584619
+    second: hooded-blade-idle_0
   - first:
-      213: 3386662938922423588
-    second: sprites_1
+      213: 2166508805203619993
+    second: hooded-blade-idle_1
   - first:
-      213: -6110656803992641779
-    second: sprites_2
+      213: 3511903240873498138
+    second: hooded-blade-idle_2
   - first:
-      213: 8553092956536608252
-    second: sprites_3
+      213: -2840323346563354012
+    second: hooded-blade-idle_3
   - first:
-      213: 6708733205153277002
-    second: sprites_4
+      213: 6866047045425392200
+    second: hooded-blade-idle_4
   - first:
-      213: 6813553822765877458
-    second: sprites_5
+      213: 7119680346649850990
+    second: hooded-blade-idle_5
   - first:
-      213: -5082647686934749709
-    second: sprites_6
+      213: -4538763574052552845
+    second: hooded-blade-idle_6
   - first:
-      213: -2423230811885516303
-    second: sprites_7
+      213: 5600623916761412095
+    second: hooded-blade-idle_7
   - first:
-      213: 1211998406744890917
-    second: sprites_8
+      213: -1870762717487153065
+    second: hooded-blade-idle_8
   - first:
-      213: 6155212226941906339
-    second: sprites_9
+      213: -5329595743752870272
+    second: hooded-blade-idle_9
   - first:
-      213: -2950032572879587788
-    second: sprites_10
+      213: 5192669220014994435
+    second: hooded-blade-idle_10
   - first:
-      213: -7263262467203474343
-    second: sprites_11
+      213: -2699803994797767461
+    second: hooded-blade-idle_11
   - first:
-      213: 7010617245534139418
-    second: sprites_12
+      213: 192959581275736535
+    second: hooded-blade-idle_12
   - first:
-      213: -7039003182478323700
-    second: sprites_13
+      213: -7010496050466889422
+    second: hooded-blade-idle_13
   - first:
-      213: -5559150632450785296
-    second: sprites_14
+      213: 1305039470421270516
+    second: hooded-blade-idle_14
   - first:
-      213: -8987557684774062561
-    second: sprites_15
+      213: -4816639626664481905
+    second: hooded-blade-idle_15
   - first:
-      213: -6751597515445260605
-    second: sprites_16
+      213: 8326609227410788436
+    second: hooded-blade-idle_16
   - first:
-      213: 5182299067807867188
-    second: sprites_17
+      213: -609141226988637881
+    second: hooded-blade-idle_17
   - first:
-      213: -2408033011751398356
-    second: sprites_18
+      213: 5768372262668296151
+    second: hooded-blade-idle_18
   - first:
-      213: -5717795354444781658
-    second: sprites_19
+      213: -5607434938742424214
+    second: hooded-blade-idle_19
   - first:
-      213: -1722539767903399326
-    second: sprites_20
+      213: 3250150405187856353
+    second: hooded-blade-idle_20
   - first:
-      213: -2018968827443427868
-    second: sprites_21
+      213: -7369489844674899979
+    second: hooded-blade-idle_21
   - first:
-      213: 3950689983899740486
-    second: sprites_22
+      213: -5345087921513487569
+    second: hooded-blade-idle_22
   - first:
-      213: -3525548655422949061
-    second: sprites_23
+      213: 4411216539766857605
+    second: hooded-blade-idle_23
   - first:
-      213: -577312649904740640
-    second: sprites_24
+      213: 3104298542399366046
+    second: hooded-blade-idle_24
   - first:
-      213: -3114738102144766914
-    second: sprites_25
+      213: -2163719840388629911
+    second: hooded-blade-idle_25
   - first:
-      213: 4172163778452043772
-    second: sprites_26
+      213: -4911978239627227560
+    second: hooded-blade-idle_26
   - first:
-      213: 2414474533063011785
-    second: sprites_27
+      213: 3724639825954689632
+    second: hooded-blade-idle_27
   - first:
-      213: 7829124088692640654
-    second: sprites_28
+      213: 8293046400517157401
+    second: hooded-blade-idle_28
   - first:
-      213: -8000517053470610818
-    second: sprites_29
+      213: 435544972814702032
+    second: hooded-blade-idle_29
   - first:
-      213: 3864339640949227112
-    second: sprites_30
+      213: 3155700290878578315
+    second: hooded-blade-idle_30
+  - first:
+      213: 4581573383523590737
+    second: hooded-blade-idle_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -199,687 +202,722 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: hooded-blade-idle_0
       rect:
         serializedVersion: 2
-        x: 208
-        y: 403
-        width: 33
-        height: 53
+        x: 84
+        y: 2605
+        width: 250
+        height: 384
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 378c5330d971c0550800000000000000
-      internalID: 6128299156075563123
+      spriteID: b22a7e678a9152910800000000000000
+      internalID: 1811882636426584619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: hooded-blade-idle_1
       rect:
         serializedVersion: 2
-        x: 282
-        y: 402
-        width: 33
-        height: 55
+        x: 598
+        y: 2605
+        width: 248
+        height: 384
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4259378eff7dffe20800000000000000
-      internalID: 3386662938922423588
+      spriteID: 990fae8974cf01e10800000000000000
+      internalID: 2166508805203619993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: hooded-blade-idle_2
       rect:
         serializedVersion: 2
-        x: 354
-        y: 403
-        width: 34
-        height: 54
+        x: 1115
+        y: 2605
+        width: 243
+        height: 385
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0fd1bd2306923ba0800000000000000
-      internalID: -6110656803992641779
+      spriteID: a16dec50469ccb030800000000000000
+      internalID: 3511903240873498138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: hooded-blade-idle_3
       rect:
         serializedVersion: 2
-        x: 426
-        y: 403
-        width: 38
-        height: 53
+        x: 1628
+        y: 2605
+        width: 242
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf5924d4ab0b2b670800000000000000
-      internalID: 8553092956536608252
+      spriteID: 462b7d807f42598d0800000000000000
+      internalID: -2840323346563354012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_0
+      name: hooded-blade-idle_4
       rect:
         serializedVersion: 2
-        x: 213
-        y: 329
-        width: 40
-        height: 54
+        x: 2141
+        y: 2605
+        width: 241
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4467024e453a1d50800000000000000
-      internalID: 6708733205153277002
+      spriteID: 84a63b1f869194f50800000000000000
+      internalID: 6866047045425392200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_1
+      name: hooded-blade-idle_5
       rect:
         serializedVersion: 2
-        x: 289
-        y: 329
-        width: 33
-        height: 55
+        x: 2653
+        y: 2605
+        width: 241
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d807ff1a1b9e8e50800000000000000
-      internalID: 6813553822765877458
+      spriteID: e64f468bd8f2ec260800000000000000
+      internalID: 7119680346649850990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_2
+      name: hooded-blade-idle_6
       rect:
         serializedVersion: 2
-        x: 360
-        y: 329
-        width: 29
-        height: 57
+        x: 93
+        y: 2093
+        width: 241
+        height: 387
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fd1bc59bdec679b0800000000000000
-      internalID: -5082647686934749709
+      spriteID: 37f7d19a3921301c0800000000000000
+      internalID: -4538763574052552845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_3
+      name: hooded-blade-idle_7
       rect:
         serializedVersion: 2
-        x: 431
-        y: 329
-        width: 32
-        height: 56
+        x: 603
+        y: 2093
+        width: 243
+        height: 388
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f948c85a64fe5ed0800000000000000
-      internalID: -2423230811885516303
+      spriteID: ff1fe1767c969bd40800000000000000
+      internalID: 5600623916761412095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_4
+      name: hooded-blade-idle_8
       rect:
         serializedVersion: 2
-        x: 507
-        y: 329
-        width: 29
-        height: 55
+        x: 1112
+        y: 2093
+        width: 246
+        height: 388
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52e5e562122e1d010800000000000000
-      internalID: 1211998406744890917
+      spriteID: 750422d5837b906e0800000000000000
+      internalID: -1870762717487153065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_5
+      name: hooded-blade-idle_9
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 2093
+        width: 249
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0862d2198e87906b0800000000000000
+      internalID: -5329595743752870272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-idle_10
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 2093
+        width: 254
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3043917c421101840800000000000000
+      internalID: 5192669220014994435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-idle_11
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 2093
+        width: 261
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd406e6229e588ad0800000000000000
+      internalID: -2699803994797767461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-idle_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1581
+        width: 266
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9c2f187b78da200800000000000000
+      internalID: 192959581275736535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-idle_13
       rect:
         serializedVersion: 2
         x: 583
-        y: 329
-        width: 34
-        height: 57
+        y: 1581
+        width: 269
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ad6300a8e4bb6550800000000000000
-      internalID: 6155212226941906339
+      spriteID: 23164ac3cf6b5be90800000000000000
+      internalID: -7010496050466889422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_0
+      name: hooded-blade-idle_14
       rect:
         serializedVersion: 2
-        x: 206
-        y: 256
-        width: 42
-        height: 54
+        x: 1092
+        y: 1581
+        width: 271
+        height: 385
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4363ea141016f07d0800000000000000
-      internalID: -2950032572879587788
+      spriteID: 4ffd254eb7e6c1210800000000000000
+      internalID: 1305039470421270516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_1
+      name: hooded-blade-idle_15
       rect:
         serializedVersion: 2
-        x: 285
-        y: 256
-        width: 42
-        height: 51
+        x: 1603
+        y: 1581
+        width: 271
+        height: 384
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95cd8ebb445b33b90800000000000000
-      internalID: -7263262467203474343
+      spriteID: f8be79977cbd72db0800000000000000
+      internalID: -4816639626664481905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_2
+      name: hooded-blade-idle_16
       rect:
         serializedVersion: 2
-        x: 352
-        y: 256
-        width: 42
-        height: 50
+        x: 2115
+        y: 1581
+        width: 271
+        height: 384
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a143a40bd37ba4160800000000000000
-      internalID: 7010617245534139418
+      spriteID: 4505f4fd9fe0e8370800000000000000
+      internalID: 8326609227410788436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_3
+      name: hooded-blade-idle_17
       rect:
         serializedVersion: 2
-        x: 426
-        y: 256
-        width: 43
-        height: 52
+        x: 2628
+        y: 1581
+        width: 271
+        height: 385
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c00198756ef605e90800000000000000
-      internalID: -7039003182478323700
+      spriteID: 741fb4b0845eb87f0800000000000000
+      internalID: -609141226988637881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_4
+      name: hooded-blade-idle_18
       rect:
         serializedVersion: 2
-        x: 506
-        y: 256
-        width: 43
-        height: 51
+        x: 71
+        y: 1069
+        width: 269
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0fff1e314fde9d2b0800000000000000
-      internalID: -5559150632450785296
+      spriteID: 7df5f80c2006d0050800000000000000
+      internalID: 5768372262668296151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: run_5
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 256
-        width: 44
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f16b5b067e7c54380800000000000000
-      internalID: -8987557684774062561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: push_0
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 182
-        width: 37
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3cea979c4d18d42a0800000000000000
-      internalID: -6751597515445260605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: push_1
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 182
-        width: 32
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 431a6809b893be740800000000000000
-      internalID: 5182299067807867188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: push_2
-      rect:
-        serializedVersion: 2
-        x: 365
-        y: 182
-        width: 29
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c24d42febb2f49ed0800000000000000
-      internalID: -2408033011751398356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: push_3
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 181
-        width: 35
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a7a0f75b6f46a0b0800000000000000
-      internalID: -5717795354444781658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: push_4
-      rect:
-        serializedVersion: 2
-        x: 509
-        y: 182
-        width: 32
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26252ae153f4818e0800000000000000
-      internalID: -1722539767903399326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: push_5
+      name: hooded-blade-idle_19
       rect:
         serializedVersion: 2
         x: 586
-        y: 182
-        width: 28
-        height: 57
+        y: 1069
+        width: 266
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e5c5a36c8e2bf3e0800000000000000
-      internalID: -2018968827443427868
+      spriteID: a6db427f1a36e22b0800000000000000
+      internalID: -5607434938742424214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_0
+      name: hooded-blade-idle_20
       rect:
         serializedVersion: 2
-        x: 213
-        y: 109
-        width: 28
-        height: 51
+        x: 1101
+        y: 1069
+        width: 261
+        height: 387
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 649a904db9ba3d630800000000000000
-      internalID: 3950689983899740486
+      spriteID: 1e760dfc29ada1d20800000000000000
+      internalID: 3250150405187856353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_1
+      name: hooded-blade-idle_21
       rect:
         serializedVersion: 2
-        x: 281
-        y: 108
-        width: 32
-        height: 53
+        x: 1618
+        y: 1069
+        width: 254
+        height: 388
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b39b8235d2cb21fc0800000000000000
-      internalID: -3525548655422949061
+      spriteID: 5ffcd4018005ab990800000000000000
+      internalID: -7369489844674899979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_2
+      name: hooded-blade-idle_22
       rect:
         serializedVersion: 2
-        x: 353
-        y: 109
-        width: 33
-        height: 55
+        x: 2133
+        y: 1069
+        width: 249
+        height: 388
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e6a6122439fcf7f0800000000000000
-      internalID: -577312649904740640
+      spriteID: f2325f8dade62d5b0800000000000000
+      internalID: -5345087921513487569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_3
+      name: hooded-blade-idle_23
       rect:
         serializedVersion: 2
-        x: 426
-        y: 116
-        width: 32
-        height: 55
+        x: 2648
+        y: 1069
+        width: 246
+        height: 388
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3c694dd23a36c4d0800000000000000
-      internalID: -3114738102144766914
+      spriteID: 58f9120421ac73d30800000000000000
+      internalID: 4411216539766857605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_4
+      name: hooded-blade-idle_24
       rect:
         serializedVersion: 2
-        x: 498
-        y: 113
-        width: 32
-        height: 63
+        x: 91
+        y: 557
+        width: 243
+        height: 388
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf7b267f9d086e930800000000000000
-      internalID: 4172163778452043772
+      spriteID: e932a78b31fa41b20800000000000000
+      internalID: 3104298542399366046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_5
+      name: hooded-blade-idle_25
       rect:
         serializedVersion: 2
-        x: 572
-        y: 108
-        width: 33
-        height: 56
+        x: 605
+        y: 557
+        width: 241
+        height: 387
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cda27e9bcfe18120800000000000000
-      internalID: 2414474533063011785
+      spriteID: 96abb20e44ce8f1e0800000000000000
+      internalID: -2163719840388629911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_0
+      name: hooded-blade-idle_26
       rect:
         serializedVersion: 2
-        x: 209
-        y: 34
-        width: 32
-        height: 56
+        x: 1117
+        y: 557
+        width: 241
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8b8af0d0e2a6ac60800000000000000
-      internalID: 7829124088692640654
+      spriteID: 85e029ad0d525dbb0800000000000000
+      internalID: -4911978239627227560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_1
+      name: hooded-blade-idle_27
       rect:
         serializedVersion: 2
-        x: 283
-        y: 34
-        width: 33
-        height: 56
+        x: 1629
+        y: 557
+        width: 241
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7aed60e02478f090800000000000000
-      internalID: -8000517053470610818
+      spriteID: 0625d4e003490b330800000000000000
+      internalID: 3724639825954689632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hurt_2
+      name: hooded-blade-idle_28
       rect:
         serializedVersion: 2
-        x: 357
-        y: 35
-        width: 32
-        height: 55
+        x: 2140
+        y: 557
+        width: 242
+        height: 386
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86e3d36ed64e0a530800000000000000
-      internalID: 3864339640949227112
+      spriteID: 91238a843c1d61370800000000000000
+      internalID: 8293046400517157401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-idle_29
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 557
+        width: 243
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5d35c58dd5b0600800000000000000
+      internalID: 435544972814702032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-idle_30
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 45
+        width: 248
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e1a67e1bc4bcb20800000000000000
+      internalID: 3155700290878578315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hooded-blade-idle_31
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 45
+        width: 250
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152ee45d7b4059f30800000000000000
+      internalID: 4581573383523590737
       vertices: []
       indices: 
       edges: []
@@ -888,7 +926,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3e78e4ca0a57ee1449079d7fb4167f19
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -898,37 +936,38 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      hurt_0: 7829124088692640654
-      hurt_1: -8000517053470610818
-      hurt_2: 3864339640949227112
-      idle_0: 6128299156075563123
-      idle_1: 3386662938922423588
-      idle_2: -6110656803992641779
-      idle_3: 8553092956536608252
-      jump_0: 3950689983899740486
-      jump_1: -3525548655422949061
-      jump_2: -577312649904740640
-      jump_3: -3114738102144766914
-      jump_4: 4172163778452043772
-      jump_5: 2414474533063011785
-      push_0: -6751597515445260605
-      push_1: 5182299067807867188
-      push_2: -2408033011751398356
-      push_3: -5717795354444781658
-      push_4: -1722539767903399326
-      push_5: -2018968827443427868
-      run_0: -2950032572879587788
-      run_1: -7263262467203474343
-      run_2: 7010617245534139418
-      run_3: -7039003182478323700
-      run_4: -5559150632450785296
-      run_5: -8987557684774062561
-      walk_0: 6708733205153277002
-      walk_1: 6813553822765877458
-      walk_2: -5082647686934749709
-      walk_3: -2423230811885516303
-      walk_4: 1211998406744890917
-      walk_5: 6155212226941906339
+      hooded-blade-idle_0: 1811882636426584619
+      hooded-blade-idle_1: 2166508805203619993
+      hooded-blade-idle_10: 5192669220014994435
+      hooded-blade-idle_11: -2699803994797767461
+      hooded-blade-idle_12: 192959581275736535
+      hooded-blade-idle_13: -7010496050466889422
+      hooded-blade-idle_14: 1305039470421270516
+      hooded-blade-idle_15: -4816639626664481905
+      hooded-blade-idle_16: 8326609227410788436
+      hooded-blade-idle_17: -609141226988637881
+      hooded-blade-idle_18: 5768372262668296151
+      hooded-blade-idle_19: -5607434938742424214
+      hooded-blade-idle_2: 3511903240873498138
+      hooded-blade-idle_20: 3250150405187856353
+      hooded-blade-idle_21: -7369489844674899979
+      hooded-blade-idle_22: -5345087921513487569
+      hooded-blade-idle_23: 4411216539766857605
+      hooded-blade-idle_24: 3104298542399366046
+      hooded-blade-idle_25: -2163719840388629911
+      hooded-blade-idle_26: -4911978239627227560
+      hooded-blade-idle_27: 3724639825954689632
+      hooded-blade-idle_28: 8293046400517157401
+      hooded-blade-idle_29: 435544972814702032
+      hooded-blade-idle_3: -2840323346563354012
+      hooded-blade-idle_30: 3155700290878578315
+      hooded-blade-idle_31: 4581573383523590737
+      hooded-blade-idle_4: 6866047045425392200
+      hooded-blade-idle_5: 7119680346649850990
+      hooded-blade-idle_6: -4538763574052552845
+      hooded-blade-idle_7: 5600623916761412095
+      hooded-blade-idle_8: -1870762717487153065
+      hooded-blade-idle_9: -5329595743752870272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
