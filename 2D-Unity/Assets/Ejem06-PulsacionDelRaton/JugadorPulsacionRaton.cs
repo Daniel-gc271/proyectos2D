@@ -4,7 +4,8 @@ using UnityEngine;
 public class JugadorPulsacionRaton : MonoBehaviour
 {
     [SerializeField] private CircleCollider2D circleCollider;
-
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
     [SerializeField] private GameControllerPulsacionRaton controlador;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,6 +14,8 @@ public class JugadorPulsacionRaton : MonoBehaviour
        controlador= GameObject.Find("GameController").GetComponent<GameControllerPulsacionRaton>();
 
         }
+        audioSource = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -31,10 +34,12 @@ public class JugadorPulsacionRaton : MonoBehaviour
             }
             else
             {
+                
                 Debug.Log("me golpeaste las bolas");
                 Destroy(this.gameObject);
                 controlador.incrementarPuntuacion();
             }
+            audioSource.PlayOneShot(audioClip, 0.1f);
 
         }
     }

@@ -17,6 +17,7 @@ public class PlayerControllerEsquivaflechas : MonoBehaviour
     [SerializeField] private float duracionParpadeo = 0.15f;
     [SerializeField] private int cantidadParpadeos = 3;
 
+   
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
     private SpriteRenderer spriteRenderer; // Componente que envía el color al shader de la GPU
@@ -26,6 +27,7 @@ public class PlayerControllerEsquivaflechas : MonoBehaviour
 
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); // Inicializamos el SpriteRenderer
