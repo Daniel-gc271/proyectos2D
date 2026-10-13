@@ -5,7 +5,10 @@ public class MovimientoAbejas : MonoBehaviour
     [SerializeField] private float velocidadEggman = 1.8f;
     private Rigidbody2D rb; // Cambia a Rigidbody2D si tu juego es 2D
     private float movV;
-
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         // Obtenemos el componente Rigidbody del objeto
