@@ -9,9 +9,13 @@ public class GameControllerPulsacionRaton : MonoBehaviour
     [SerializeField] private TextMeshProUGUI contadorEsfericas;
 
     [SerializeField] private float esperaInicialSpawneo =1, intervaloSpawneo=3;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(audioClip,0.3f);
         InvokeRepeating("crearBola", esperaInicialSpawneo, intervaloSpawneo);
     }
 
