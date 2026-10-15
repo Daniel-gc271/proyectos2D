@@ -3,7 +3,8 @@ using UnityEngine;
 public class FlechaAbejitas : MonoBehaviour
 {
     [SerializeField] private float limiteXIzquierda = -6f;
-
+    
+    [SerializeField] private AudioClip sonidoImpacto;
     void Update()
     {
         // Si la flecha pasa el límite izquierdo, se considera esquivada con éxito
@@ -25,8 +26,11 @@ public class FlechaAbejitas : MonoBehaviour
             if (GameControllerAbejitas.gameControllerAbejitas != null)
             {
                 GameControllerAbejitas.gameControllerAbejitas.PerderVida();
+                
             }
-            Destroy(gameObject);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+            Destroy(gameObject,2);
         }
     }
 }

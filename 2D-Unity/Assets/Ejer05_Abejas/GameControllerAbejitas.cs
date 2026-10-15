@@ -1,14 +1,18 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Necesario para detectar el cambio de escena
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameControllerAbejitas : MonoBehaviour
 {
     public static GameControllerAbejitas gameControllerAbejitas;
+    private bool isGameOver = false;
+
+    private GameObject objEsquivadas, objVidas;
 
     [Header("Estado del Juego")]
     [SerializeField] private int vidas = 3;
     [SerializeField] private int flechasEsquivadas = 0;
+    [SerializeField] private float escaladoVelocidad = 0.4f;
 
     [Header("Configuración de Tiempos y Spawn")]
     [SerializeField] private GameObject[] objectToSpawn;
@@ -20,39 +24,36 @@ public class GameControllerAbejitas : MonoBehaviour
     [Header("UI TextMeshPro")]
     private TextMeshProUGUI textoVidas;
     private TextMeshProUGUI textoFlechasEsquivadas;
+    private TextMeshProUGUI textoGameOver;
 
     [Header("Cambio de Escena")]
     [SerializeField] private string nombreEscenaSiguiente;
+
+    [SerializeField] private AudioClip sonidoGameOver;
+    [SerializeField] private AudioClip sonidoFondo;
+    [SerializeField] private AudioClip sonidoImpacto;
+    [SerializeField] private GameObject objetoJugador;
 
     private void Awake()
     {
         if (gameControllerAbejitas == null)
         {
             gameControllerAbejitas = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(this.gameObject);
+
+            AudioSource audioSource = GetComponent<AudioSource>();
+            if (audioSource != null && sonidoFondo != null)
+            {
+                audioSource.clip = sonidoFondo;
+                audioSource.loop = true;
+                audioSource.volume = 0.2f;
+                audioSource.Play();
+            }
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
-    }
-
-    private void OnEnable()
-    {
-        // Nos suscribimos al evento de carga de escena
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnDisable()
-    {
-        // Nos desuscribimos para evitar fugas de memoria
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    // Se ejecuta automáticamente cada vez que se carga una escena
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        VincularUI();
     }
 
     void Start()
@@ -71,21 +72,26 @@ public class GameControllerAbejitas : MonoBehaviour
         }
     }
 
-    // Método para encontrar los textos en la nueva escena por su nombre en la jerarquía
-    private void VincularUI()
+    // El método ahora es público para poder llamarlo si es necesario, pero es simple y directo
+    public void VincularUI()
     {
-        // Buscamos el objeto de vidas en la escena actual
-        GameObject objVidas = GameObject.Find("Cont vidas");
+        objVidas = GameObject.Find("Cont vidas");
         if (objVidas != null)
         {
             textoVidas = objVidas.GetComponent<TextMeshProUGUI>();
         }
 
-        // Buscamos el objeto de flechas esquivadas en la escena actual
-        GameObject objEsquivadas = GameObject.Find("Cont esquivadas");
+        objEsquivadas = GameObject.Find("Cont esquivadas");
         if (objEsquivadas != null)
         {
             textoFlechasEsquivadas = objEsquivadas.GetComponent<TextMeshProUGUI>();
+        }
+
+        GameObject objGameOver = GameObject.Find("Text game over");
+        if (objGameOver != null)
+        {
+            textoGameOver = objGameOver.GetComponent<TextMeshProUGUI>();
+            textoGameOver.text = "";
         }
     }
 
@@ -93,6 +99,8 @@ public class GameControllerAbejitas : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(nombreEscenaSiguiente))
         {
+            fuerzaHorizontal += escaladoVelocidad; // Aumenta la velocidad de las flechas al cambiar de escena
+            // Cambia de escena de manera síncrona tradicional
             SceneManager.LoadScene(nombreEscenaSiguiente);
         }
         else
@@ -103,15 +111,13 @@ public class GameControllerAbejitas : MonoBehaviour
 
     private void crearBola()
     {
-        if (objectToSpawn == null || objectToSpawn.Length == 0) return;
+        if (objectToSpawn == null || objectToSpawn.Length == 0 || isGameOver) return;
 
         Vector2 posAleatoria = new Vector2(xSpawn, Random.Range(-4f, 4f));
-
         GameObject prefabElegido = objectToSpawn[Random.Range(0, objectToSpawn.Length)];
         if (prefabElegido == null) return;
 
         GameObject nuevaBola = Instantiate(prefabElegido, posAleatoria, Quaternion.identity);
-
         Rigidbody2D rb = nuevaBola.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
@@ -121,21 +127,73 @@ public class GameControllerAbejitas : MonoBehaviour
 
     public void PerderVida()
     {
+        if (isGameOver) return;
+
         vidas--;
+        AudioSource audioSource = GetComponent<AudioSource>();
+
+        if (audioSource != null && sonidoImpacto != null)
+        {
+            audioSource.clip = sonidoImpacto;
+            audioSource.loop = false;
+            audioSource.volume = 0.2f;
+            audioSource.Play();
+        }
+
         if (vidas <= 0)
         {
             vidas = 0;
+            isGameOver = true;
             Debug.Log("¡Game Over!");
+
+            if (audioSource != null && sonidoGameOver != null)
+            {
+                audioSource.clip = sonidoGameOver;
+                audioSource.loop = false;
+                audioSource.volume = 0.2f;
+                audioSource.Play();
+            }
+
+            if (objetoJugador != null)
+            {
+                Destroy(objetoJugador);
+            }
+
+            if (textoVidas != null) textoVidas.text = "";
+            if (textoFlechasEsquivadas != null) textoFlechasEsquivadas.text = "";
+
+            if (textoGameOver != null)
+            {
+                textoGameOver.text = "¡Game Over!";
+            }
         }
     }
 
     public void SumarFlechaEsquivada()
     {
-        flechasEsquivadas++;
+        if (!isGameOver)
+        {
+            flechasEsquivadas++;
+
+            // Si llega a 10 flechas, cambia automáticamente de nivel manteniendo el contador intacto
+            if (flechasEsquivadas >= 10)
+            {
+                CambiarEscena();
+            }
+        }
     }
 
     private void ActualizarUI()
     {
+        if (isGameOver) return;
+
+        // Comprobación dinámica: Si los textos no existen (porque cambiamos de escena), los busca automáticamente
+        if (textoVidas == null || textoFlechasEsquivadas == null)
+        {
+            VincularUI();
+        }
+
+        // Asignación segura de textos en pantalla
         if (textoVidas != null)
         {
             textoVidas.text = "Vidas: " + vidas;

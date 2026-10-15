@@ -158,6 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlechaAbejitas
   limiteXIzquierda: -12
+  audioSource: {fileID: 0}
+  sonidoImpacto: {fileID: 8300000, guid: 1a53d80ec8723984a92f088f2fafae11, type: 3}
 --- !u!50 &3643844431926324009
 Rigidbody2D:
   serializedVersion: 5
