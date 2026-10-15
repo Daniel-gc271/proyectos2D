@@ -513,6 +513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameControllerAbejitas
   vidas: 3
   flechasEsquivadas: 0
+  escaladoVelocidad: 0.4
   objectToSpawn:
   - {fileID: 7149390339492576117, guid: df57aedab5a3ede4faf2bae5c00e7dd4, type: 3}
   esperaInicialSpawneo: 1
@@ -521,7 +522,7 @@ MonoBehaviour:
   fuerzaHorizontal: 5
   nombreEscenaSiguiente: Abejitas2
   sonidoGameOver: {fileID: 8300000, guid: 836fbda14f34a4349ad3f757a9b75a8f, type: 3}
-  sonidoFondo: {fileID: 8300000, guid: 8452b4b659e63df4991b43be7935c1cf, type: 3}
+  sonidoFondo: {fileID: 8300000, guid: 8f25c1db711972e42ae92cb09d0c8fa8, type: 3}
   sonidoImpacto: {fileID: 8300000, guid: 1a53d80ec8723984a92f088f2fafae11, type: 3}
   objetoJugador: {fileID: 1370506819}
 --- !u!82 &440440304
