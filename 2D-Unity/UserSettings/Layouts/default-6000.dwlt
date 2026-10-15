@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Hierarchy
+=======
+  m_Title: Project
+>>>>>>> origin/main
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 388}
   m_MaxSize: {x: 10000, y: 10000}
@@ -221,6 +225,11 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 15}
+=======
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
+  m_ActualView: {fileID: 17}
+>>>>>>> origin/main
   m_Panes:
   - {fileID: 15}
   - {fileID: 13}
@@ -1573,7 +1582,11 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Ejer05_Abejas
+=======
+    - Assets/EjerPlataformas
+>>>>>>> origin/main
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1583,6 +1596,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Ejer05_Abejas
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\UnityProjects\proyectos2D\2D-Unity
@@ -1601,6 +1615,8 @@ MonoBehaviour:
     - m_rawData: 568105584918842560
     - m_rawData: 568105584918843070
     - m_rawData: 568105587066273791
+=======
+>>>>>>> origin/main
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1668,6 +1684,13 @@ MonoBehaviour:
     m_LastClickedEntityId:
       m_rawData: 568105584918847062
     m_HadKeyboardFocusLastEvent: 1
+=======
+    m_SelectedInstanceIDs:
+    - m_rawData: 568105584918842742
+    m_LastClickedEntityId:
+      m_rawData: 568105584918842742
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> origin/main
     m_ExpandedInstanceIDs:
     - m_rawData: 568105584918858096
     - m_rawData: 568105584918839668
