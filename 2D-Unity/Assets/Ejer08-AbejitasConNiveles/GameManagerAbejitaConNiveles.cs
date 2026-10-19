@@ -1,42 +1,31 @@
 using UnityEngine;
-using TMPro; // Asegúrate de incluir esto si usas TextMeshPro para los textos en pantalla
+using TMPro;
 
 public class GameManagerAbejitaConNiveles : MonoBehaviour
 {
-    // Instancia estática para el patrón Singleton (para que otros scripts accedan con GameManagerAbejitaConNiveles.Instance)
     public static GameManagerAbejitaConNiveles Instance { get; private set; }
 
-    [Header("Configuración de Persistencia")]
-    [SerializeField] private GameObject[] dontDestroyObjects; // Objetos que no se destruyen al cambiar de escena
+    [Header("Configuración de Jugador")]
+    [SerializeField] private TMP_InputField inputNombreJugador; 
+    private string nombreJugador = "Abejita"; // Nombre por defecto si no escribe nada
 
     [Header("Estadísticas del Jugador")]
     [SerializeField] private int vidas = 3;
     [SerializeField] private int esquivadas = 0;
     private int nivel = 1;
 
-    [Header("Referencias UI (Opcional)")]
+    [Header("Referencias UI")]
     [SerializeField] private TextMeshProUGUI textoVidas, textoEsquivadas, textoNiveles;
-    
 
     void Awake()
     {
-        // Patrón Singleton: Asegurar que solo exista un GameManager
         if (Instance == null)
         {
             Instance = this;
-
-            // Si quieres que este GameObject persista entre escenas:
             DontDestroyOnLoad(gameObject);
-
-            // Si tienes un array de objetos adicionales que deben persistir:
-            foreach (GameObject obj in dontDestroyObjects)
-            {
-                if (obj != null) DontDestroyOnLoad(obj);
-            }
         }
         else
         {
-            // Si ya existe otro GameManager, destruimos este duplicado para evitar conflictos
             Destroy(gameObject);
         }
     }
@@ -46,13 +35,19 @@ public class GameManagerAbejitaConNiveles : MonoBehaviour
         ActualizarUI();
     }
 
-    // Métodos públicos para que otros scripts (abeja, flechas, etc.) puedan modificar vidas o esquives
+    // Método para capturar el texto del InputField antes de guardar o cambiar de escena
+    public void GuardarNombreDesdeInput()
+    {
+        if (inputNombreJugador != null && !string.IsNullOrEmpty(inputNombreJugador.text))
+        {
+            nombreJugador = inputNombreJugador.text;
+        }
+    }
 
     public void PerderVida(int cantidad = 1)
     {
         vidas -= cantidad;
         ActualizarUI();
-        Debug.Log("Vida perdida. Vidas restantes: " + vidas);
 
         if (vidas <= 0)
         {
@@ -64,7 +59,6 @@ public class GameManagerAbejitaConNiveles : MonoBehaviour
     {
         esquivadas += cantidad;
         ActualizarUI();
-        Debug.Log("Flecha esquivada. Total esquivadas: " + esquivadas);
     }
 
     private void ActualizarUI()
@@ -77,6 +71,22 @@ public class GameManagerAbejitaConNiveles : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("¡Game Over!");
-        // Aquí puedes cargar la escena de Game Over o mostrar un panel
+
+        // 1. Asegurarnos de tomar el texto actual del InputField
+        GuardarNombreDesdeInput();
+
+        // 2. Guardar en el ranking usando el nombre introducido, nivel y esquivadas
+        int posicionLograda = Ranking.GuardarPuntuacion(nombreJugador, nivel, esquivadas);
+
+        if (posicionLograda != -1)
+        {
+            Debug.Log("¡Nuevo récord para " + nombreJugador + " en el puesto " + (posicionLograda + 1) + "!");
+        }
+        else
+        {
+            Debug.Log(nombreJugador + " no ha entrado en el Top 5.");
+        }
+
+        // Aquí puedes cargar la escena de fin de juego o mostrar el panel de puntuaciones
     }
 }
