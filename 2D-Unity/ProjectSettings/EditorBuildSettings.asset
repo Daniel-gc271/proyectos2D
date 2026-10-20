@@ -5,14 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Ejer05_Abejas/Abejitas.unity
     guid: 71fed0725223fc345aac781ce905fb56
-  - enabled: 1
+  - enabled: 0
     path: Assets/Ejer05_Abejas/Abejitas2.unity
     guid: 1bde29813f66d1a499de4b669048ed0b
+  - enabled: 1
+    path: Assets/Ejem07_Persistencia/Ranking.unity
+    guid: 784b29d5d7cdca14998c841211bc5908
+  - enabled: 1
+    path: Assets/Ejem07_Persistencia/Persistencia.unity
+    guid: 449f128eb7245d44cb452d9228856216
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
