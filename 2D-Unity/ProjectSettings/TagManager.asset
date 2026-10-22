@@ -9,6 +9,7 @@ TagManager:
   - ladder
   - door
   - Flecha
+  - hole
   layers:
   - Default
   - TransparentFX

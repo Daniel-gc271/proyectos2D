@@ -3,7 +3,7 @@ using UnityEngine.InputSystem; // Por si usas el Input System
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-public class PlayerController : MonoBehaviour
+public class MovimientoAnimacionesEjem01 : MonoBehaviour
 {
     [Header("Movimiento")]
     [SerializeField] private float walkSpeed = 5f;
@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Componentes")]
     [SerializeField] private Animator animator;
-    private Rigidbody2D rb;
+    [SerializeField]  private Rigidbody2D rb;
 
     [Header("Estado actual")]
     [SerializeField] private bool IsGrounded;
@@ -21,13 +21,9 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-
-        if (animator == null)
-        {
-            animator = GetComponentInChildren<Animator>();
-        }
+        if (rb == null) { Debug.LogWarning("No hay rigidBody"); }
+        if (animator == null) { Debug.LogWarning("No hay Animator"); }
+        
     }
 
     private void Update()
@@ -35,7 +31,7 @@ public class PlayerController : MonoBehaviour
         // 1. Entrada horizontal (-1, 0, 1)
         movH = Input.GetAxisRaw("Horizontal");
 
-        // 2. Alternar carrera con Control Izquierdo (o Keyboard.current si usas New Input System)
+        // 2. Alternar carrera con Control Izquierdo
         if (Input.GetKeyDown(KeyCode.LeftControl) || (Keyboard.current != null && Keyboard.current.leftCtrlKey.wasPressedThisFrame))
         {
             isRunning = !isRunning;
@@ -45,7 +41,22 @@ public class PlayerController : MonoBehaviour
         float currentSpeed = isRunning ? runSpeed : walkSpeed;
         rb.linearVelocity = new Vector2(movH * currentSpeed, rb.linearVelocity.y);
 
-        // 4. Actualizar variables del Animator
+        // 4. Salto (Sacado fuera del if de animator para que funcione siempre)
+        if ((Input.GetKeyDown(KeyCode.Space) || (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)) && IsGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            if (animator != null) animator.SetTrigger("Jump");
+            IsGrounded = false;
+        }
+
+        // 5. Daño (Sacado fuera del if de animator)
+        if (Input.GetKeyDown(KeyCode.Q) || (Keyboard.current != null && Keyboard.current.qKey.wasPressedThisFrame))
+        {
+            if (animator != null) animator.SetTrigger("Hurt");
+        }
+
+        // 6. Actualizar variables del Animator (Protegido correctamente)
         if (animator != null)
         {
             animator.SetBool("IsGrounded", IsGrounded);
@@ -68,23 +79,8 @@ public class PlayerController : MonoBehaviour
                 // Quieto
                 animator.SetBool("IsIdle", true);
             }
-
-            // 5. Salto
-            if ((Input.GetKeyDown(KeyCode.Space) || (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)) && IsGrounded)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                animator.SetTrigger("Jump");
-                IsGrounded = false;
-            }
-
-            // 6. Daño
-            if (Input.GetKeyDown(KeyCode.Q) || (Keyboard.current != null && Keyboard.current.qKey.wasPressedThisFrame))
-            {
-                animator.SetTrigger("Hurt");
-            }
         }
-    }
+    } // <- Aquí cierra correctamente el Update
 
     private void OnCollisionStay2D(Collision2D collision)
     {
